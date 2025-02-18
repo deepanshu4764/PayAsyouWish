@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay-As-You-Wish Decision Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pay-As-You-Wish Decision Tool</h1>
+    </header>
+    <main>
+        <form id="decision-form">
+            <label>
+                <span>Is your product's marginal cost low?</span>
+                <select name="low-marginal-cost" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+            <label>
+                <span>Do you have loyal customers?</span>
+                <select name="loyal-customers" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+            <label>
+                <span>Is your market highly competitive?</span>
+                <select name="competitive-market" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+        <section id="result"></section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
