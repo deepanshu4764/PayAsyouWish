@@ -3,40 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pay-As-You-Wish Decision Tool</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Best eCommerce website with top-rated products, easy shopping, and fast checkout">
+    <title>Shopify - The Ultimate Shopping Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Pay-As-You-Wish Decision Tool</h1>
+        <div class="logo">
+            <h1>Shopify</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <form id="decision-form">
-            <label>
-                <span>Is your product's marginal cost low?</span>
-                <select name="low-marginal-cost" required>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
-            </label>
-            <label>
-                <span>Do you have loyal customers?</span>
-                <select name="loyal-customers" required>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
-            </label>
-            <label>
-                <span>Is your market highly competitive?</span>
-                <select name="competitive-market" required>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
-            </label>
-            <button type="submit">Submit</button>
-        </form>
-        <section id="result"></section>
-    </main>
-    <script src="script.js"></script>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Shop the Latest Trends</h2>
+            <p>Discover the hottest deals and best-selling products.</p>
+            <a href="#" class="btn-primary">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="product-gallery">
+        <h2>Featured Products</h2>
+        <div class="products">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="assets/images/product1.jpg" alt="Product 1">
+                <h3>Wireless Earbuds</h3>
+                <p>$99.99</p>
+                <a href="#" class="btn-secondary">Add to Cart</a>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="assets/images/product2.jpg" alt="Product 2">
+                <h3>Smart Watch</h3>
+                <p>$149.99</p>
+                <a href="#" class="btn-secondary">Add to Cart</a>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="assets/images/product3.jpg" alt="Product 3">
+                <h3>4K Camera</h3>
+                <p>$299.99</p>
+                <a href="#" class="btn-secondary">Add to Cart</a>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="assets/images/product4.jpg" alt="Product 4">
+                <h3>Bluetooth Speaker</h3>
+                <p>$59.99</p>
+                <a href="#" class="btn-secondary">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Shopify. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
