@@ -1,19 +1,11 @@
-document.getElementById('decision-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    // Get form data
-    const form = e.target;
-    const answers = Array.from(form.elements)
-        .filter(el => el.tagName === 'SELECT')
-        .map(select => select.value);
-
-    // Simple decision logic
-    const yesCount = answers.filter(answer => answer === 'yes').length;
-    const result = document.getElementById('result');
-
-    if (yesCount >= 2) {
-        result.textContent = "Yes, this pricing model might work well for you!";
-    } else {
-        result.textContent = "No, this pricing model may not be a good fit.";
-    }
+// scripts.js
+document.addEventListener("DOMContentLoaded", function () {
+    const addToCartButtons = document.querySelectorAll('.btn-secondary');
+    
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            alert("Item added to cart!");
+            // You can later expand this to actually add items to a shopping cart.
+        });
+    });
 });
